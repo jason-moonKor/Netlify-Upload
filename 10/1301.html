@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>1301 문재상</title>
+		<style>
+			body {
+				width: 600px;
+			}
+			ul {
+				list-style-type: none;
+				display: flex;
+				border-bottom: solid 1px gray;
+				padding-bottom: 10px;
+			}
+			.samecheck {
+				background-color: blueviolet;
+			}
+			li {
+				padding: 5px;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			h3 {
+				padding-bottom: 10px;
+				border-bottom: solid 3px blue;
+			}
+			.first {
+				width: 80px;
+				text-align: right;
+			}
+			.year {
+				width: 50px;
+			}
+			.mon {
+				width: 40px;
+			}
+			.day {
+				width: 40px;
+			}
+			.phone1 {
+				width: 30px;
+			}
+			.phone2,
+			.phone3 {
+				width: 50px;
+			}
+			.join {
+				padding-top: 10px;
+				padding-left: 180px;
+			}
+			#join_button {
+				background-color: antiquewhite;
+				margin-left: 10px;
+				height: 30px;
+			}
+			.last {
+				border-bottom: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>회원가입정보</h3>
+		<ul>
+			<li class="first">아이디</li>
+			<li>
+				<input type="text" />
+				<button class="samecheck">중복확인</button>
+				영문, 숫자 조합으로 4~12자 이내
+			</li>
+		</ul>
+		<ul>
+			<li class="first">비밀번호</li>
+			<li>
+				<input type="password" />
+				영문, 숫자 조합으로 4~12자 이내
+			</li>
+		</ul>
+		<ul>
+			<li class="first">비밀번호 확인</li>
+			<li>
+				<input type="password" />
+			</li>
+		</ul>
+		<ul>
+			<li class="first">이름</li>
+			<li>
+				<input type="text" />
+			</li>
+		</ul>
+		<ul>
+			<li class="first">생년월일</li>
+			<li>
+				<input type="text" class="year" />
+				년
+				<input type="text" class="mon" />
+				월
+				<input type="text" class="day" />
+				일
+				<input type="radio" checked />
+				음력
+				<input type="radio" />
+				양력
+			</li>
+		</ul>
+		<ul>
+			<li class="first">이메일</li>
+			<li>
+				<input type="text" />
+			</li>
+		</ul>
+		<ul>
+			<li class="first">휴대전화</li>
+			<li>
+				<input type="text" class="phone1" />
+				-
+				<input type="text" class="phone2" />
+				-
+				<input type="text" class="phone3" />
+			</li>
+		</ul>
+		<ul>
+			<li class="first">직업</li>
+			<li>
+				<select>
+					<option>직업선택</option>
+					<option>학생</option>
+					<option>프로그래머</option>
+					<option>자영업</option>
+					<option>강사</option>
+				</select>
+			</li>
+		</ul>
+		<ul>
+			<li class="first">영어수강목적</li>
+			<li>
+				<input type="checkbox" id="check" />
+				시험대비
+				<input type="checkbox" id="check" />
+				업무상
+				<input type="checkbox" id="check" />
+				취미
+				<input type="checkbox" id="check" />
+				기타
+			</li>
+		</ul>
+		<ul class="last">
+			<li class="join">
+				<button id="join_button">가입취소</button>
+				<button id="join_button">가입완료</button>
+			</li>
+		</ul>
+	</body>
+</html>

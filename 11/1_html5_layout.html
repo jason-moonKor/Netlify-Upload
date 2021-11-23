@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML5 레이아웃 태그를 이용해서 웹페이지 레이아웃 만들기</title>
+		<style>
+			.clear {
+				clear: both;
+			}
+			header {
+				width: 800px;
+				height: 60px;
+				margin: 2px;
+				border: solid 2px #ff0000;
+			}
+			aside {
+				width: 175px;
+				height: 398px;
+				float: left;
+				padding: 2px;
+				border: solid 2px #ff0000;
+			}
+			nav {
+				height: 150px;
+				margin-bottom: 50px;
+				margin: 2px;
+				border: solid 2px #0000ff;
+			}
+			main {
+				width: 618px;
+				height: 400px;
+				float: left;
+				margin: 2px;
+				border: solid 2px #ff0000;
+			}
+			section {
+				width: 500px;
+				height: 150px;
+				margin: 2px;
+				border: solid 2px #00ff00;
+			}
+			footer {
+				width: 800px;
+				height: 90px;
+				margin: 2px;
+				border: solid 2px #ff0000;
+			}
+		</style>
+	</head>
+	<body>
+		<header>상단 헤더 header</header>
+		<aside>
+			좌측 aside
+			<nav>aside 안에 nav</nav>
+		</aside>
+		<main>
+			메인 main
+			<section>메인안에 section 내용1</section>
+			<section>메인안에 section 내용2</section>
+		</main>
+		<div class="clear"></div>
+		<footer>하단 footer</footer>
+	</body>
+</html>

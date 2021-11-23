@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>포지션을 설정하지 않은경우</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#parent {
+				width: 500px;
+				height: 300px;
+				border: solid 3px black;
+				margin: 50px;
+			}
+			#box1,
+			#box2,
+			#box3 {
+				width: 80px;
+				height: 80px;
+			}
+			#box1 {
+				background-color: aquamarine;
+			}
+			#box2 {
+				background-color: yellowgreen;
+			}
+			#box3 {
+				background-color: olivedrab;
+			}
+			#box2 {
+				position: relative;
+				top: 20px;
+				left: 50px;
+			}
+			#box3 {
+				position: relative;
+				top: 60px;
+				left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="box1">박스 1</div>
+			<div id="box2">박스 2</div>
+			<div id="box3">박스 3</div>
+		</div>
+	</body>
+</html>
